@@ -1,13 +1,13 @@
 export const config = {
     developer: {
         name: "David",
-        fullName: "David Noden",
+        fullName: "King Tin Beau Kuok",
         title: "Full-Stack Engineer",
         description: "Full-stack engineer with a track record of building scalable, maintainable, and high-performance applications across frontend and backend. Proven expertise in Backend and Frontend, with a strong foundation in cloud infrastructure (AWS), DevOps, and data engineering. Delivering full-stack solutions that power AI, analytics, and research platforms."
     },
     social: {
-        github: "light888999",
-        email: "david.noden.dev@gmail.com",
+        github: "light89219",
+        email: "beau.kuok.dev@gmail.com",
         location: "Leicester City, United Kingdom"
     },
     about: {
@@ -109,10 +109,10 @@ export const config = {
         }
     ],
     contact: {
-        email: "david.noden.dev@gmail.com",
-        phone: "+447494294208",
-        github: "https://github.com/light888999",
-        linkedin: "https://www.linkedin.com/in/david-noden-6a53843a9/"
+        email: "beau.kuok.dev@gmail.com",
+        phone: "+447893926829",
+        github: "https://github.com/light89219",
+        linkedin: "https://www.linkedin.com/in/beau-kuok-b305673b8/"
     },
     skills: {
         develop: {
@@ -129,5 +129,3 @@ export const config = {
         }
     }
 };
-
-

@@ -1,6 +1,6 @@
-# David Noden - Portfolio Website
+# King Tin Beau Kuok - Portfolio Website
 
-A modern, interactive portfolio website showcasing my work as a Full-Stack Engineer. Built with React, TypeScript, and Three.js, featuring smooth animations, 3D elements, and an interactive chess game.
+A modern, interactive portfolio website showcasing my work as a Full-Stack Engineer. Built with React, TypeScript, and Three.js, featuring smooth animations, 3D elements.
 
 ## 🚀 Features
 
@@ -64,34 +64,6 @@ The site will be available at `http://localhost:5173` (or the port shown in term
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint
-
-## 📁 Project Structure
-
-```
-portfolio/
-├── public/
-│   ├── images/          # Project images and assets
-│   └── videos/          # Video files for projects
-├── src/
-│   ├── components/      # React components
-│   │   ├── About.tsx
-│   │   ├── Career.tsx
-│   │   ├── Contact.tsx
-│   │   ├── Landing.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── Work.tsx
-│   │   └── ...
-│   ├── pages/           # Page components
-│   │   ├── MyWorks.tsx
-│   │   └── Play.tsx
-│   ├── config.ts        # Portfolio data configuration
-│   ├── main.tsx         # Entry point
-│   └── App.tsx          # Main app component
-├── index.html
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
-```
 
 ## ⚙️ Configuration
 
@@ -172,11 +144,11 @@ This project is private and proprietary.
 
 ## 👤 Author
 
-**David Noden**
-- Email: david.noden.dev@gmail.com
-- GitHub: [@light888999](https://github.com/light888999)
-- LinkedIn: [David Noden](https://www.linkedin.com/in/david-noden-6a53843a9/)
-- Location: Leicester City, United Kingdom
+**King Tin Beau Kuok**
+- Email: beau.kuok.dev@gmail.com
+- GitHub: [@light89219](https://github.com/light89219)
+- LinkedIn: [King Tin Beau Kuok](https://www.linkedin.com/in/beau-kuok-b305673b8/)
+- Location: United Kingdom
 
 ## 🙏 Acknowledgments
 
