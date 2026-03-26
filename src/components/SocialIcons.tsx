@@ -1,8 +1,7 @@
 import {
   FaGithub,
   FaLinkedinIn,
-  FaPhone,
-  FaWhatsapp,
+  FaPhone
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { useEffect } from "react";
