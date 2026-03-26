@@ -8,7 +8,7 @@ export const config = {
     social: {
         github: "light89219",
         email: "beau.kuok.dev@gmail.com",
-        location: "Leicester City, United Kingdom"
+        location: "Hull City, United Kingdom"
     },
     about: {
         title: "About Me",
@@ -18,7 +18,7 @@ export const config = {
         {
             position: "Full-Stack Engineer",
             company: "Boost Bunny IT Service L.L.C",
-            period: "2023 - Present",
+            period: "2024 - Present",
             location: "United Arab Emirates",
             description: "Revamped the 3D geospatial visualization platform using Python/Django and React/TypeScript, supporting 100+ concurrent users with sub-200ms latency. Designed React-based interfaces for data visualization and lab automation, improving researcher efficiency by 40%.",
             responsibilities: [

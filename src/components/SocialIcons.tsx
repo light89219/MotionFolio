@@ -75,7 +75,7 @@ const SocialIcons = () => {
             </a>
           </span>
         )}
-        {"phone" in config.contact && config.contact.phone && (
+        {/* {"phone" in config.contact && config.contact.phone && (
           <span>
             <a
               href={`https://wa.me/${config.contact.phone.replace(/\D/g, "")}`}
@@ -85,7 +85,7 @@ const SocialIcons = () => {
               <FaWhatsapp />
             </a>
           </span>
-        )}
+        )} */}
       </div>
     </div>
   );
