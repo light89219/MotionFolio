@@ -17,7 +17,14 @@ const MyWorks = () => {
 
       <div className="myworks-grid">
         {config.projects.map((project, index) => (
-          <div className="myworks-card" key={project.id} data-cursor="disable">
+          <a
+            className="myworks-card"
+            key={project.id}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor="disable"
+          >
             <div className="myworks-card-number">0{index + 1}</div>
             <div className="myworks-card-image">
               <img src={project.image} alt={project.title} />
@@ -28,7 +35,7 @@ const MyWorks = () => {
               <p className="myworks-card-description">{project.description}</p>
               <p className="myworks-card-tech">{project.technologies}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

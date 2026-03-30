@@ -66,7 +66,14 @@ const Work = () => {
         </h2>
         <div className="work-flex">
           {config.projects.slice(0, 5).map((project, index) => (
-            <div className="work-box" key={project.id}>
+            <a
+              className="work-box"
+              key={project.id}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cursor="disable"
+            >
               <div className="work-info">
                 <div className="work-title">
                   <h3>0{index + 1}</h3>
@@ -79,8 +86,12 @@ const Work = () => {
                 <h4>Tools and features</h4>
                 <p>{project.technologies}</p>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
-            </div>
+              <WorkImage
+                image={project.image}
+                alt={project.title}
+                showLinkArrow
+              />
+            </a>
           ))}
           {/* See All Works Button */}
           <div className="work-box work-box-cta">

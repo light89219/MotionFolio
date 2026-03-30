@@ -44,6 +44,11 @@
   justify-content: start;
 }
 
+a.work-box {
+  text-decoration: none;
+  color: inherit;
+}
+
 .work-flex .work-box:nth-child(even) {
   flex-direction: column-reverse;
 }
@@ -131,7 +136,7 @@
   color: inherit;
 }
 
-.work-image a:hover .work-link {
+.work-image-in:hover .work-link {
   opacity: 1;
 }
 
