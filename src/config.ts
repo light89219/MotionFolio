@@ -1,6 +1,6 @@
 export const config = {
     developer: {
-        name: "David",
+        name: "Kuok",
         fullName: "King Tin Beau Kuok",
         title: "Full-Stack Engineer",
         description: "Full-stack engineer with a track record of building scalable, maintainable, and high-performance applications across frontend and backend. Proven expertise in Backend and Frontend, with a strong foundation in cloud infrastructure (AWS), DevOps, and data engineering. Delivering full-stack solutions that power AI, analytics, and research platforms."
@@ -69,6 +69,42 @@ export const config = {
         },
         {
             id: 2,
+            title: "Willow Walk",
+            category: "Full Stack / Real Estate",
+            technologies: "React, TypeScript, JavaScript, AWS CloudFront, Responsive Web",
+            image: "/images/willowwalk.jpg",
+            description: "Marketing and discovery experience for the Willow Walk development. Responsive layouts for brand storytelling, development highlights, and lead journeys, delivered with fast global edge delivery.",
+            url: "https://d1oci14bbx7oca.cloudfront.net/"
+        },
+        {
+            id: 3,
+            title: "Park 151",
+            category: "Full Stack / Real Estate",
+            technologies: "React, TypeScript, JavaScript, Responsive Web, SEO",
+            image: "/images/park151.jpg",
+            description: "Digital platform for Park 151: property presentation, amenity and neighbourhood narrative, and polished mobile-first UX tailored to prospective buyers and residents.",
+            url: "https://www.park151.app/"
+        },
+        {
+            id: 4,
+            title: "Coronation Square",
+            category: "Full Stack / Real Estate",
+            technologies: "React, TypeScript, JavaScript, Responsive Web",
+            image: "/images/coronation.jpg",
+            description: "Public marketing site for Coronation Square in London—clear navigation through homes, place-making content, and strong visual identity for the masterplan.",
+            url: "https://www.coronationsquare.london/"
+        },
+        {
+            id: 5,
+            title: "Newman Mansion Square",
+            category: "Full Stack / Real Estate",
+            technologies: "React, TypeScript, JavaScript, Responsive Web",
+            image: "/images/nmsq.jpg",
+            description: "London development microsite for Newman Mansion Square: refined typography and layout, development story, and buyer-focused content across breakpoints.",
+            url: "https://www.newmansionsquare.london/"
+        },
+        {
+            id: 6,
             title: "Guestboard",
             category: "Full Stack / Event Management",
             technologies: "React, Laravel, PHP, MySQL, Pusher, Laravel Echo",
@@ -77,7 +113,7 @@ export const config = {
             url: "https://guestboard.co/"
         },
         {
-            id: 3,
+            id: 7,
             title: "JAXA JADE2",
             category: "Scientific / Data Visualization",
             technologies: "CesiumJS, React, Django, Python, AWS, S3, EC2, WebGL",
@@ -86,7 +122,7 @@ export const config = {
             url: "https://jade2.darts.isas.jaxa.jp/"
         },
         {
-            id: 4,
+            id: 8,
             title: "MyWorldNavigator",
             category: "Full Stack / Enterprise",
             technologies: "React, Typesense, PHP, WordPress, MySQL, REST APIs",
@@ -95,7 +131,7 @@ export const config = {
             url: "https://myworldnavigator.com/navigator/"
         },
         {
-            id: 5,
+            id: 9,
             title: "HiTask",
             category: "Full Stack / Productivity",
             technologies: "React, Redux, Python, Django, REST APIs",
@@ -104,7 +140,7 @@ export const config = {
             url: "https://hitask.com/"
         },
         {
-            id: 6,
+            id: 10,
             title: "DSX",
             category: "Desktop / Hardware",
             technologies: "WPF, C#, XAML, Windows, Bluetooth, USB HID",

@@ -1,5 +1,10 @@
-import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy, Suspense, useLayoutEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
@@ -8,10 +13,45 @@ const MainContainer = lazy(() => import("./components/MainContainer"));
 const MyWorks = lazy(() => import("./pages/MyWorks"));
 const Play = lazy(() => import("./pages/Play"));
 import { LoadingProvider } from "./context/LoadingProvider";
+import { lenis } from "./components/Navbar";
+
+/** Paths where the home Lenis stack is absent; document must allow vertical scroll */
+const DOCUMENT_SCROLL_ROUTES = ["/myworks", "/play"];
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+    const useDocScroll = DOCUMENT_SCROLL_ROUTES.some(
+      (p) => pathname === p || pathname.startsWith(`${p}/`)
+    );
+
+    if (useDocScroll) {
+      html.classList.add("body-scroll-doc");
+      body.classList.add("body-scroll-doc");
+    } else {
+      html.classList.remove("body-scroll-doc");
+      body.classList.remove("body-scroll-doc");
+    }
+
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+    lenis?.scrollTo(0, { immediate: true, force: true });
+    window.scrollTo(0, 0);
+    html.scrollTop = 0;
+    document.body.scrollTop = 0;
+    html.style.scrollBehavior = prev;
+  }, [pathname]);
+
+  return null;
+};
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"

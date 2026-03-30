@@ -37,6 +37,15 @@ body {
   overflow: hidden;
 }
 
+/* Routes like /myworks, /play: no Lenis; document must scroll on desktop */
+html.body-scroll-doc,
+body.body-scroll-doc {
+  overflow-x: hidden;
+  overflow-y: auto !important;
+  height: auto;
+  min-height: 100vh;
+}
+
 /* Allow scrolling on mobile */
 @media only screen and (max-width: 768px) {
   body {
