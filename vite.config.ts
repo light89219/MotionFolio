@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // Ensure deep links like /myworks serve the SPA entry (index.html)
+  appType: "spa",
   plugins: [react()],
   build: {
     rollupOptions: {
