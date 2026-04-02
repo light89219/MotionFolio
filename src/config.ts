@@ -2,8 +2,8 @@ export const config = {
     developer: {
         name: "Kuok",
         fullName: "King Tin Beau Kuok",
-        title: "Full-Stack Engineer",
-        description: "Full-stack engineer with a track record of building scalable, maintainable, and high-performance applications across frontend and backend. Proven expertise in Backend and Frontend, with a strong foundation in cloud infrastructure (AWS), DevOps, and data engineering. Delivering full-stack solutions that power AI, analytics, and research platforms."
+        title: "AI / Full-Stack Engineer",
+        description: "AI / Full-stack engineer with a track record of building scalable, maintainable, and high-performance applications across frontend and backend. Proven expertise in Backend and Frontend, with a strong foundation in cloud infrastructure (AWS), DevOps, and data engineering. Delivering full-stack solutions that power AI, analytics, and research platforms."
     },
     social: {
         github: "light89219",
@@ -12,16 +12,17 @@ export const config = {
     },
     about: {
         title: "About Me",
-        description: "I am a Full-Stack Engineer from United Kingdom. I build scalable, maintainable applications across frontend and backend with expertise in Python, Django, PHP, Laravel, Node.js, React, Angular, Vue, and AWS. I have delivered full-stack solutions in startups and enterprise environments—from 3D geospatial visualization platforms and financial data analytics to pharmacy and research tools."
+        description: "I am a AI / Full-Stack Engineer from United Kingdom. I build scalable, maintainable applications across frontend and backend with expertise in Python, Django, PHP, Laravel, Node.js, React, Angular, Vue, and AWS. I have delivered full-stack solutions in startups and enterprise environments—from 3D geospatial visualization platforms and financial data analytics to pharmacy and research tools."
     },
     experiences: [
         {
-            position: "Full-Stack Engineer",
+            position: "AI / Full-Stack Engineer",
             company: "Boost Bunny IT Service L.L.C",
             period: "2023 - Present",
             location: "United Arab Emirates",
-            description: "Built and optimized financial web applications with secure data workflows, transaction handling, and real-time analytics. Contributed to payments infrastructure and RESTful APIs, delivered AI-powered automation, and ran reliable cloud ops on AWS and Docker.",
+            description: "Built AI image/video generation pipelines for Vimmerse and financial web applications with secure data workflows, transaction handling, and real-time analytics. Contributed to payments infrastructure and RESTful APIs, delivered AI-powered automation, and ran reliable cloud ops on AWS and Docker.",
             responsibilities: [
+                "Built AI image/video generation pipelines for Vimmerse (text-to-image and text-to-video) exposed via unified APIs",
                 "Built and optimized financial web applications with secure data workflows, transaction handling, and real-time analytics features",
                 "Contributed to payments infrastructure, integrating and enhancing RESTful APIs for reliable transaction processing and improved system performance",
                 "Designed and delivered AI-powered solutions for intelligent data processing, automation, and enhanced user interaction",
@@ -60,6 +61,15 @@ export const config = {
     projects: [
         {
             id: 1,
+            title: "Vimmerse",
+            category: "AI / Full Stack",
+            technologies: "AI Image, Image-to-Video, Video2Video, AI Story, API, Python, Django, React, Redux, REST APIs",
+            image: "/images/vimmerse.webp",
+            description: "AI production platform that turns static images, product descriptions, and story ideas into dynamic engaging videos, with a unified API for media creation workflows.",
+            url: "https://www.vimmerse.net/"
+        },
+        {
+            id: 2,
             title: "Notes Trader",
             category: "Full Stack / Fintech",
             technologies: "React, Redux, Python, Django, REST APIs",
@@ -68,52 +78,52 @@ export const config = {
             url: "https://www.notestrader.com/"
         },
         {
-            id: 2,
+            id: 3,
             title: "Willow Walk",
             category: "Full Stack / Real Estate",
-            technologies: "React, TypeScript, JavaScript, AWS CloudFront, Responsive Web",
+            technologies: "React, TypeScript, JavaScript, AWS CloudFront, Responsive Web, Three.js, WebGL",
             image: "/images/willowwalk.jpg",
             description: "Marketing and discovery experience for the Willow Walk development. Responsive layouts for brand storytelling, development highlights, and lead journeys, delivered with fast global edge delivery.",
             url: "https://d1oci14bbx7oca.cloudfront.net/"
         },
         {
-            id: 3,
+            id: 4,
             title: "Park 151",
             category: "Full Stack / Real Estate",
-            technologies: "React, TypeScript, JavaScript, Responsive Web, SEO",
+            technologies: "React, TypeScript, JavaScript, Responsive Web, SEO, Three.js, WebGL",
             image: "/images/park151.jpg",
             description: "Digital platform for Park 151: property presentation, amenity and neighbourhood narrative, and polished mobile-first UX tailored to prospective buyers and residents.",
             url: "https://www.park151.app/"
         },
         {
-            id: 4,
+            id: 5,
             title: "Coronation Square",
             category: "Full Stack / Real Estate",
-            technologies: "React, TypeScript, JavaScript, Responsive Web",
+            technologies: "React, TypeScript, JavaScript, Responsive Web, Three.js, WebGL",
             image: "/images/coronation.jpg",
             description: "Public marketing site for Coronation Square in London—clear navigation through homes, place-making content, and strong visual identity for the masterplan.",
             url: "https://www.coronationsquare.london/"
         },
         {
-            id: 5,
+            id: 6,
             title: "Newman Mansion Square",
             category: "Full Stack / Real Estate",
-            technologies: "React, TypeScript, JavaScript, Responsive Web",
+            technologies: "React, TypeScript, JavaScript, Responsive Web, Three.js, WebGL",
             image: "/images/nmsq.jpg",
             description: "London development microsite for Newman Mansion Square: refined typography and layout, development story, and buyer-focused content across breakpoints.",
             url: "https://www.newmansionsquare.london/"
         },
         {
-            id: 6,
+            id: 7,
             title: "Guestboard",
             category: "Full Stack / Event Management",
-            technologies: "React, Laravel, PHP, MySQL, Pusher, Laravel Echo",
+            technologies: "React, Laravel, PHP, MySQL, Pusher, WebSocket",
             image: "/images/guestboard.png",
             description: "Modular event management platform with a widget-based dashboard. Real-time chat, schedules, and file sharing. Engineered real-time message board and notification system with Pusher and Laravel Echo. Complex RSVP and guest permission logic with automated transactional emails and secure CSV exports.",
             url: "https://guestboard.co/"
         },
         {
-            id: 7,
+            id: 8,
             title: "JAXA JADE2",
             category: "Scientific / Data Visualization",
             technologies: "CesiumJS, React, Django, Python, AWS, S3, EC2, WebGL",
@@ -122,7 +132,7 @@ export const config = {
             url: "https://jade2.darts.isas.jaxa.jp/"
         },
         {
-            id: 8,
+            id: 9,
             title: "MyWorldNavigator",
             category: "Full Stack / Enterprise",
             technologies: "React, Typesense, PHP, WordPress, MySQL, REST APIs",
@@ -131,7 +141,7 @@ export const config = {
             url: "https://myworldnavigator.com/navigator/"
         },
         {
-            id: 9,
+            id: 10,
             title: "HiTask",
             category: "Full Stack / Productivity",
             technologies: "React, Redux, Python, Django, REST APIs",
@@ -140,7 +150,7 @@ export const config = {
             url: "https://hitask.com/"
         },
         {
-            id: 10,
+            id: 11,
             title: "DSX",
             category: "Desktop / Hardware",
             technologies: "WPF, C#, XAML, Windows, Bluetooth, USB HID",
@@ -157,13 +167,13 @@ export const config = {
     },
     skills: {
         develop: {
-            title: "BACKEND & DEVOPS",
+            title: "AI / BACKEND & DEVOPS",
             description: "Scalable backends & DevOps with Docker and AWS",
             details: "Building back-end infrastructure with Python, Django, Node, Express, and PHP. Data ingestion, ETL pipelines, and APIs. Cloud infrastructure with AWS, Docker, and DevOps.",
-            tools: ["Python", "Django", "Node", "Express", "PHP", "REST APIs", "AWS", "Docker", "KDB+", "Vagrant", "ETL"]
+            tools: ["AI", "LLM", "Python", "Django", "Node", "Express", "PHP", "REST APIs", "AWS", "Docker", "KDB+", "Vagrant", "ETL"]
         },
         design: {
-            title: "FULL-STACK & FRONTEND",
+            title: "AI / FULL-STACK & FRONTEND",
             description: "Modern web & data visualization",
             details: "Building responsive interfaces with React, Redux, Vue, Angular, TypeScript, and JavaScript. Data visualization, 3D geospatial (CesiumJS), and mobile-responsive platforms.",
             tools: ["React", "Redux", "Vue", "Angular", "TypeScript", "JavaScript", "HTML", "CSS", "C#", "WPF", "API Integration"]
