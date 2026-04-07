@@ -147,7 +147,7 @@ This project is private and proprietary.
 **King Tin Beau Kuok**
 - Email: beau.kuok.dev@gmail.com
 - GitHub: [@light89219](https://github.com/light89219)
-- LinkedIn: [King Tin Beau Kuok](https://www.linkedin.com/in/beau-kuok-b305673b8/)
+- LinkedIn: [King Tin Beau Kuok](https://www.linkedin.com/in/king-tin-beau-kuok-b305673b8/)
 - Location: United Kingdom
 
 ## 🙏 Acknowledgments

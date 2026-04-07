@@ -163,7 +163,7 @@ export const config = {
         email: "beau.kuok.dev@gmail.com",
         phone: "+447893926829",
         github: "https://github.com/light89219",
-        linkedin: "https://www.linkedin.com/in/beau-kuok-b305673b8/"
+        linkedin: "https://www.linkedin.com/in/king-tin-beau-kuok-b305673b8/"
     },
     skills: {
         develop: {
