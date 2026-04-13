@@ -157,7 +157,52 @@ export const config = {
             image: "/images/dsx.jpg",
             description: "High-performance Windows utility for PlayStation 5 DualSense controller customization. Manages low-level Bluetooth and USB HID protocols. Specialized driver integration for Steam ecosystem compatibility. XAML-based UI with real-time feedback for haptic levels, battery life, and trigger resistance. Custom trigger mechanics and haptic simulation.",
             url: "https://store.steampowered.com/app/1812620/DSX/"
-        }
+        },
+        // {
+        //     id: 12,
+        //     title: "Pollen",
+        //     category: "Web3 / DeFi",
+        //     technologies: "React, Web3, Responsive Web, REST APIs",
+        //     image: "/images/pollen.svg",
+        //     description: "DeFi trading and portfolio platform: virtual portfolios, leagues, competitions, and governance—complex strategies presented through a streamlined app experience.",
+        //     url: "https://pollen.id/"
+        // },
+        // {
+        //     id: 13,
+        //     title: "Swing",
+        //     category: "Web3 / Infrastructure",
+        //     technologies: "React, TypeScript, API integration, Responsive Web",
+        //     image: "/images/swing.svg",
+        //     description: "Cross-chain liquidity and bridge aggregation: marketing and developer surfaces for Swing’s API, SDK, and embeddable swap experiences across many chains and protocols.",
+        //     url: "https://swing.xyz/"
+        // },
+        // {
+        //     id: 14,
+        //     title: "Win",
+        //     category: "Web3 / Gaming",
+        //     technologies: "React, Responsive Web, Gaming / SDK storytelling",
+        //     image: "/images/win-app.svg",
+        //     description: "Play-to-earn gaming infrastructure: positioning for the Win SDK, mobile eSports titles, rewards, and ecosystem—bringing blockchain rewards and competitive play to a broad audience.",
+        //     url: "https://win.app/"
+        // },
+        // {
+        //     id: 15,
+        //     title: "Fanton",
+        //     category: "Web3 / Fantasy Sports",
+        //     technologies: "React, TON ecosystem, Responsive Web",
+        //     image: "/images/fanton.svg",
+        //     description: "Fantasy football on TON: free-to-play and tournament flows, league integrations, and NFT player cards—high engagement UX for fans and competitive seasons.",
+        //     url: "https://fan-ton.com/"
+        // },
+        // {
+        //     id: 16,
+        //     title: "MSquared",
+        //     category: "Immersive / Virtual Worlds",
+        //     technologies: "React, Responsive Web, Enterprise marketing",
+        //     image: "/images/msquared.svg",
+        //     description: "Immersive experiences platform: Morpheus, web worlds, avatars, and trust-and-safety tooling—corporate storytelling for brands building owned virtual spaces at scale.",
+        //     url: "https://msquared.io/"
+        // }
     ],
     contact: {
         email: "beau.kuok.dev@gmail.com",

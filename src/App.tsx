@@ -1,4 +1,4 @@
-import { lazy, Suspense, useLayoutEffect } from "react";
+import { lazy, Suspense, useEffect, useLayoutEffect } from "react";
 import {
   BrowserRouter,
   Routes,
@@ -7,6 +7,11 @@ import {
 } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
+import {
+  hasAnalyticsConfig,
+  initGoogleAnalytics,
+  trackPageView,
+} from "./lib/analytics";
 
 const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
@@ -48,10 +53,26 @@ const ScrollToTop = () => {
   return null;
 };
 
+const RouteAnalyticsTracker = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!hasAnalyticsConfig) {
+      return;
+    }
+
+    initGoogleAnalytics();
+    trackPageView(`${location.pathname}${location.search}${location.hash}`);
+  }, [location.pathname, location.search, location.hash]);
+
+  return null;
+};
+
 const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <RouteAnalyticsTracker />
       <Routes>
         <Route
           path="/"
