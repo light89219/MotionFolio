@@ -8,12 +8,18 @@ declare global {
 let initialized = false;
 
 const isBrowser = typeof window !== "undefined";
-const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined;
+const measurementId = (
+  import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined
+)?.trim();
+const isLikelyValidMeasurementId =
+  typeof measurementId === "string" &&
+  /^G-[A-Z0-9]{6,}$/i.test(measurementId) &&
+  measurementId !== "G-XXXXXXXXXX";
 
-export const hasAnalyticsConfig = Boolean(measurementId);
+export const hasAnalyticsConfig = Boolean(isLikelyValidMeasurementId);
 
 export const initGoogleAnalytics = () => {
-  if (!isBrowser || !measurementId || initialized) {
+  if (!isBrowser || !isLikelyValidMeasurementId || initialized) {
     return;
   }
 
@@ -35,7 +41,7 @@ export const initGoogleAnalytics = () => {
 };
 
 export const trackPageView = (path: string) => {
-  if (!measurementId || !window.gtag) {
+  if (!isLikelyValidMeasurementId || !window.gtag) {
     return;
   }
 
@@ -45,3 +51,10 @@ export const trackPageView = (path: string) => {
     page_title: document.title,
   });
 };
+
+if (isBrowser && !isLikelyValidMeasurementId) {
+  // Provide setup feedback in dev without interrupting users in production.
+  console.warn(
+    "Google Analytics is disabled. Set a valid VITE_GA_MEASUREMENT_ID in your .env file."
+  );
+}
