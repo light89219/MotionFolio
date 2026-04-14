@@ -75,7 +75,7 @@ export const config = {
             technologies: "React, Redux, Python, Django, REST APIs",
             image: "/images/notestrader.png",
             description: "Secure financial marketplace for listing, analysis, and trading of mortgage-backed notes. Robust Redux architecture for real-time sync between asset listings and investment portfolios. High-performance React components for valuation and risk assessment. Interactive data filtering for secondary market opportunities.",
-            url: "https://www.notestrader.com/"
+            url: "https://prereo.notestrader.com/"
         },
         {
             id: 3,
