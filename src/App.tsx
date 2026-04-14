@@ -6,12 +6,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
+import ReactGA from "react-ga4";
 import "./App.css";
-import {
-  hasAnalyticsConfig,
-  initGoogleAnalytics,
-  trackPageView,
-} from "./lib/analytics";
 
 const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
@@ -19,6 +15,9 @@ const MyWorks = lazy(() => import("./pages/MyWorks"));
 const Play = lazy(() => import("./pages/Play"));
 import { LoadingProvider } from "./context/LoadingProvider";
 import { lenis } from "./components/Navbar";
+
+const TRACKING_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+ReactGA.initialize(TRACKING_ID);
 
 /** Paths where the home Lenis stack is absent; document must allow vertical scroll */
 const DOCUMENT_SCROLL_ROUTES = ["/myworks", "/play"];
@@ -53,26 +52,17 @@ const ScrollToTop = () => {
   return null;
 };
 
-const RouteAnalyticsTracker = () => {
+const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (!hasAnalyticsConfig) {
-      return;
-    }
+    // Send a pageview event whenever the location changes
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+  }, [location]);
 
-    initGoogleAnalytics();
-    trackPageView(`${location.pathname}${location.search}${location.hash}`);
-  }, [location.pathname, location.search, location.hash]);
-
-  return null;
-};
-
-const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <RouteAnalyticsTracker />
       <Routes>
         <Route
           path="/"
