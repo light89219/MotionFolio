@@ -52,16 +52,19 @@ const ScrollToTop = () => {
   return null;
 };
 
-const App = () => {
+const AppContent = () => {
   const location = useLocation();
 
   useEffect(() => {
     // Send a pageview event whenever the location changes
-    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
   }, [location]);
 
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <Routes>
         <Route
@@ -96,8 +99,14 @@ const App = () => {
         />
       </Routes>
       <Analytics />
-    </BrowserRouter>
+    </>
   );
 };
+
+const App = () => (
+  <BrowserRouter>
+    <AppContent />
+  </BrowserRouter>
+);
 
 export default App;
