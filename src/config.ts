@@ -206,7 +206,7 @@ export const config = {
     ],
     contact: {
         email: "beau.kuok.dev@gmail.com",
-        phone: "+447893926829",
+        phone: "+447828750885",
         github: "https://github.com/light89219",
         linkedin: "https://www.linkedin.com/in/king-tin-beau-kuok-b305673b8/"
     },
